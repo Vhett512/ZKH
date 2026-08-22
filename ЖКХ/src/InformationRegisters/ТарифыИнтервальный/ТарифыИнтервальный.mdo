@@ -52,6 +52,10 @@
   <dataLockControlMode>Managed</dataLockControlMode>
   <enableTotalsSliceFirst>true</enableTotalsSliceFirst>
   <enableTotalsSliceLast>true</enableTotalsSliceLast>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Тариф</value>
+  </recordPresentation>
   <resources uuid="4b7f1fca-8e8f-4301-ad9f-b5354fb49374">
     <name>Тариф</name>
     <synonym>

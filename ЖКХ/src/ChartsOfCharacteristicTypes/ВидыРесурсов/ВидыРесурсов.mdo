@@ -21,6 +21,10 @@
   <createOnInput>DontUse</createOnInput>
   <dataLockControlMode>Managed</dataLockControlMode>
   <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Ресурс</value>
+  </objectPresentation>
   <type>
     <types>CatalogRef.ТипыРесурсов</types>
   </type>
