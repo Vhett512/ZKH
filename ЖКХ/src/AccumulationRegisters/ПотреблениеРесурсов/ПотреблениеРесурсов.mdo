@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a929f041-10e6-48d9-8c9d-d4613bce070b">
+  <producedTypes>
+    <selectionType typeId="0be8e63e-de5a-4683-9eee-d7026e5c0757" valueTypeId="0574ebc0-f627-4a0d-be60-ff40ef24d911"/>
+    <listType typeId="922506c9-1728-4c18-bc98-52b2f2e642ed" valueTypeId="569fc720-6e58-49c0-82dd-bd50fc11a3a9"/>
+    <managerType typeId="f6ace231-6b7f-4c35-92af-8119febd641f" valueTypeId="d81a7dbe-6b3b-4ec9-bf6f-28ee2fc97c46"/>
+    <recordSetType typeId="2c4eaf17-bd5e-4b0d-825a-6c51dcc8ed28" valueTypeId="08777fea-a1ad-4714-b68c-652fbcbeb8a2"/>
+    <recordKeyType typeId="9f91ecaf-58a4-4719-967e-27c5069f057e" valueTypeId="cd0a43f3-9f99-469e-b488-740f43597f34"/>
+    <recordType typeId="f695c83f-f2c2-495f-891d-5a23adf87cd7" valueTypeId="b86bb856-9ffd-4d7b-9744-6eda597a0ef5"/>
+  </producedTypes>
+  <name>ПотреблениеРесурсов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Потребление ресурсов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="94af0389-a922-44f4-aba8-ae43d9ced976">
+    <name>ПотреблениеРесурса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Потребление ресурса</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="20d2b523-6fc7-4a7e-9423-0dd46864b0cc">
+    <name>ПриборУчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прибор учета</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПриборыУчета</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

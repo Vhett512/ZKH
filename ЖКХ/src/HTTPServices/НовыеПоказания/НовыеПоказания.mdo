@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="728eebf4-20fa-4358-8b91-b96220c98505">
+  <name>НовыеПоказания</name>
+  <synonym>
+    <key>ru</key>
+    <value>Новые показания</value>
+  </synonym>
+  <rootURL>doc</rootURL>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="18d31499-eb36-455c-b8ee-aa705ba23536">
+    <name>ПолучениеДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получение данных</value>
+    </synonym>
+    <template>/new/</template>
+    <methods uuid="a369195e-7ba0-4afc-ac67-d6c197920eb7">
+      <name>Загрузка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Загрузка</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>ПолучениеДанныхЗагрузка</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

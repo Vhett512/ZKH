@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="867562f1-b7f5-42be-a8cc-aae769eae415">
+  <producedTypes>
+    <refType typeId="27482e6f-2f0c-4da9-b4b5-9ee4e1fcd700" valueTypeId="083920ac-002d-44a4-b677-951097112318"/>
+    <listType typeId="7b26f908-1ebf-47b1-b9b0-403396add8b5" valueTypeId="0a04c897-34ae-4461-a953-a2cf5c0ba78e"/>
+    <managerType typeId="2761a0b7-1e8f-4725-851a-f3b6ed6e5ec7" valueTypeId="a92a9637-037b-4661-97c3-38aa6b049858"/>
+  </producedTypes>
+  <name>ВидыРасчетов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды расчетов</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="d4a4c3e3-61ec-4f87-a97e-8d51c3b3f43c">
+    <name>ПоСчетчику</name>
+    <synonym>
+      <key>ru</key>
+      <value>По счетчику</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="2da23feb-7ca6-4a83-9a31-84afdf5909a2">
+    <name>ПоНормативу</name>
+    <synonym>
+      <key>ru</key>
+      <value>По нормативу</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="4ea3b0ea-cc34-4922-a4d4-ab1d536e5dc7">
+    <name>Смешанный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Смешанный</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

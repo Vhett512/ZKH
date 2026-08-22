@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="89150608-b593-48a0-b0cb-b781aadce2ab">
+  <producedTypes>
+    <selectionType typeId="fdf7dd7a-4f13-4079-98b8-f2567b0ba98d" valueTypeId="c8efe0f2-0d2d-44f2-bdb6-e418ddb36e12"/>
+    <listType typeId="9c8a240d-f031-4b74-a7a2-21051f5456cf" valueTypeId="eb2ef69b-6513-4b60-9b62-3fc2cce0d9b8"/>
+    <managerType typeId="029f5bc2-6b2b-4d55-bf50-cd0b453d005e" valueTypeId="48a17115-2f04-4a8c-a4b8-977ba23b6028"/>
+    <recordSetType typeId="e18ff25c-1608-41c9-8a3b-099c98f40b75" valueTypeId="fc7601f3-93bf-4ba5-8e3a-7ef1e2d6972d"/>
+    <recordKeyType typeId="a76c2e2c-dd2f-4cb0-aff8-2379da7afece" valueTypeId="fec8bff2-b2b0-4f34-9eac-0072c262ec5a"/>
+    <recordType typeId="c26856a3-76f1-4f50-9693-ec5cd3e3d93d" valueTypeId="78f3ed0c-1d36-402d-92a9-c50ea2d44435"/>
+    <recordManagerType typeId="64c3fd6e-3bf2-4c1a-bef1-bf1309b8aea8" valueTypeId="dcd3acba-b6df-438b-bf36-74572ea7b0bd"/>
+  </producedTypes>
+  <name>ТарифыИнтервальный</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тарифы интервальный</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSliceFirst>true</enableTotalsSliceFirst>
+  <enableTotalsSliceLast>true</enableTotalsSliceLast>
+  <resources uuid="4b7f1fca-8e8f-4301-ad9f-b5354fb49374">
+    <name>Тариф</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тариф</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="39242018-0357-4294-85c8-d17ce19d4e98">
+    <name>РесурсУслуга</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ресурс услуга</value>
+    </synonym>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.ВидыРесурсов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="6fbdf819-da74-4d3c-a02a-b6a37014fb44">
+    <name>ДатаНачала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="77cda9a2-9191-4618-a81b-654e30f14d74">
+    <name>ДатаОкончания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

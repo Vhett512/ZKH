@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ChartOfCharacteristicTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5aded3cb-56f4-46d2-a493-b4f290e0616e">
+  <producedTypes>
+    <objectType typeId="01e58543-e05a-4818-8ee8-93655b72d070" valueTypeId="86e12256-56a1-45c4-b2ef-f5a3c2adc932"/>
+    <refType typeId="7dfe8d1f-ff59-4228-95eb-87a6ba194242" valueTypeId="b9130e50-acc2-444a-8341-a1145acf9f32"/>
+    <selectionType typeId="c5f26324-bb60-43a8-afe1-03c5467c31c2" valueTypeId="e77716da-6670-493e-997d-04921f913346"/>
+    <listType typeId="ed7c55a0-3b6b-475e-a735-cb9300098300" valueTypeId="a9f786a3-402a-4b5d-881d-f08923cc9c1b"/>
+    <managerType typeId="fbcd24bc-b782-436d-9274-88c7ed4f1185" valueTypeId="8f27daef-0d58-4a38-919b-4427865745a0"/>
+    <containerType typeId="2835f577-182e-49f7-b5e2-e8c1acf07979" valueTypeId="199676e1-4597-4bce-ba7f-de188aaf1acd"/>
+  </producedTypes>
+  <name>ВидыРесурсов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды ресурсов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ChartOfCharacteristicTypes.ВидыРесурсов.StandardAttribute.Description</inputByString>
+  <inputByString>ChartOfCharacteristicTypes.ВидыРесурсов.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <basedOn>Catalog.ТипыРесурсов</basedOn>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <type>
+    <types>CatalogRef.ТипыРесурсов</types>
+  </type>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <descriptionLength>50</descriptionLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="ce153888-2ead-4a1e-bc43-1424e0b01244">
+    <name>Тип</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТипыРесурсов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="62365ef9-90c2-4c36-9828-787ff9732985">
+    <name>ПорядокРасчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порядок расчета</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыРасчетов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="33d0e3de-40cd-4acb-86f2-122e294ee294">
+    <name>Владелец</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обеспечивающий ресурс</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.РесурсныеКомпании</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f0f00881-7285-490e-a60c-3cba2fd5f8f6">
+    <name>ОДН</name>
+    <synonym>
+      <key>ru</key>
+      <value>ОДН</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Общедомовые нужды</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:ChartOfCharacteristicTypes>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c89f17a9-21d7-453b-91bd-5d8168c5fb4d">
+  <producedTypes>
+    <objectType typeId="6b5066af-0400-4b89-961e-530efa6ac43a" valueTypeId="4ea26291-69a7-4f87-9ab7-eb178433cf9f"/>
+    <refType typeId="c0140514-38de-4fc6-915d-ab44a3dcfde0" valueTypeId="929f2df4-a473-415b-b8ed-10b5dbc11ad3"/>
+    <selectionType typeId="632e0bfa-869f-4d2f-92ea-71b0c71538db" valueTypeId="bc284b80-48e8-46e5-af35-8ce5002809cf"/>
+    <listType typeId="cc99185f-6efa-4802-a717-598888f10a21" valueTypeId="92202e83-992d-4904-8ca9-cb3cf1b71184"/>
+    <managerType typeId="048f4840-2fb9-489f-9955-07211d1428fe" valueTypeId="487a86da-b3bc-4e24-9a1c-4f473578e19c"/>
+  </producedTypes>
+  <name>ТипыРесурсов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ресурсы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ТипыРесурсов.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ТипыРесурсов.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Ресурс</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="009591e9-8e18-4984-9994-76bf9256ed14">
+      <name>Вода</name>
+      <description>Вода</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="25c53348-de7d-4913-ae2e-f5c4b5d72247">
+      <name>Электричество</name>
+      <description>Электричество</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="d6776baf-390c-4bd1-95ea-1e65f55a28e0">
+    <name>ЕдиницаИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

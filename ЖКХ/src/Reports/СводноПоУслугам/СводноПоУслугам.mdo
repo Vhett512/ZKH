@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6a88f6c0-e0a5-4f2b-b240-d946422c1f95">
+  <producedTypes>
+    <objectType typeId="c4a3f794-2626-4409-acf9-7275a8c2dd58" valueTypeId="68f2140c-ae7d-4758-8c6d-cf294768d779"/>
+    <managerType typeId="8fcacb6e-8fda-4915-95aa-9c1b78087087" valueTypeId="e41d76fd-cb04-4327-8708-4e8cb4dd6ed2"/>
+  </producedTypes>
+  <name>СводноПоУслугам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сводно по услугам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.СводноПоУслугам.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="c657c5e6-0726-46c0-ada7-0012bd1df210">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

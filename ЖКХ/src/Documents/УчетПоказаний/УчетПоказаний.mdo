@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="02fcec8a-2251-444d-b095-0091f3cb4aed">
+  <producedTypes>
+    <objectType typeId="02aebbb0-9a74-4cf5-929b-95677531645a" valueTypeId="bdaa901a-2abb-4163-a5d3-dad8b9e44d50"/>
+    <refType typeId="626b5973-c1e3-4055-b415-e2001919b6e9" valueTypeId="b3db19a5-03ae-4cc6-b34a-1981c5dc0a18"/>
+    <selectionType typeId="c8024070-d837-42e6-871d-ae130ac5b0d6" valueTypeId="8138a9db-732c-4782-8b69-224bf764a770"/>
+    <listType typeId="1e4b38d4-9a05-463a-9faf-5908ffc81849" valueTypeId="245e592c-1ef6-4111-89aa-ef610a44ee72"/>
+    <managerType typeId="dbe9145c-cfe1-4ce5-a646-391937f0aaa6" valueTypeId="201488ad-bfe8-4aec-9438-05978fc2d5dc"/>
+  </producedTypes>
+  <name>УчетПоказаний</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учет показаний</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.УчетПоказаний.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <format>
+      <key>ru</key>
+      <value>ДФ=dd.MM.yyyy</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ДФ=dd.MM.yyyy</value>
+    </editFormat>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <numberPeriodicity>Month</numberPeriodicity>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.УчетПоказаний.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>InformationRegister.Показания</registerRecords>
+  <registerRecords>AccumulationRegister.ПотреблениеРесурсов</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="0209fc96-0d43-40ca-ad0f-c26d1d9102b7">
+    <name>Недвижимость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Недвижимость</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ОбъектыНедвижимости</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="468a4d6e-d8de-4d52-b3d7-fb3d3d1bffc5">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="bba9d8cf-9b55-462c-821a-1a3cfe89c16b">
+    <producedTypes>
+      <objectType typeId="eef5e2b5-07e0-496f-8aba-d6f3de01d708" valueTypeId="0c9e4d30-16b9-42ac-bac3-8f760fa90a34"/>
+      <rowType typeId="df2812ff-3a2f-46cc-a42d-7174bfd1e48c" valueTypeId="74b5c6f8-68d5-4cdc-abab-15b4b292e3b4"/>
+    </producedTypes>
+    <name>Показания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показания</value>
+    </synonym>
+    <attributes uuid="dc15e5ef-acf6-40a0-998a-79b5307ad3b7">
+      <name>ПриборУчета</name>
+      <synonym>
+        <key>ru</key>
+        <value>Прибор учета</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ПриборыУчета</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="e780c7f3-0004-4dab-9bc5-feb5c0241fb4">
+      <name>ЗначениеУслуги</name>
+      <synonym>
+        <key>ru</key>
+        <value>Значение услуги</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="6c4df2b1-d16a-4785-97fc-06a3388514d7">
+      <name>Услуга</name>
+      <synonym>
+        <key>ru</key>
+        <value>Услуга</value>
+      </synonym>
+      <type>
+        <types>ChartOfCharacteristicTypesRef.ВидыРесурсов</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <lineNumberLength>9</lineNumberLength>
+  </tabularSections>
+</mdclass:Document>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Configuration xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="83b4dbf4-1b02-4157-830e-20f538f67b2b">
+  <name>ЖКХ</name>
+  <synonym>
+    <key>ru</key>
+    <value>ЖКХ</value>
+  </synonym>
+  <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="95579d0f-bf4f-47d5-a181-b65c4c727684"/>
+  <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="7edc0161-5a3a-4aef-a912-ea16321df5f7"/>
+  <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="4ecf3002-d46e-470e-8ad3-166bf35b7367"/>
+  <containedObjects classId="9de14907-ec23-4a07-96f0-85521cb6b53b" objectId="122d37ae-c0cd-4062-a10d-f81f3c517ba3"/>
+  <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="e4aab051-679c-4810-8281-70055bfe21a7"/>
+  <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="b6ad1e81-ef5d-4e08-813a-1b741eff0d9e"/>
+  <containedObjects classId="fb282519-d103-4dd3-bc12-cb271d631dfc" objectId="d451ccf0-049f-4c92-a6a7-01bbf5d634b4"/>
+  <defaultRunMode>ManagedApplication</defaultRunMode>
+  <usePurposes>PersonalComputer</usePurposes>
+  <scriptVariant>Russian</scriptVariant>
+  <version>2026.04.06</version>
+  <usedMobileApplicationFunctionalities>
+    <functionality>
+      <use>true</use>
+    </functionality>
+    <functionality>
+      <functionality>OSBackup</functionality>
+      <use>true</use>
+    </functionality>
+  </usedMobileApplicationFunctionalities>
+  <clientApplicationWindowsOpenVariant>OpenDataInDialogs</clientApplicationWindowsOpenVariant>
+  <defaultLanguage>Language.Русский</defaultLanguage>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
+  <modalityUseMode>DontUse</modalityUseMode>
+  <synchronousPlatformExtensionAndAddInCallUseMode>DontUse</synchronousPlatformExtensionAndAddInCallUseMode>
+  <interfaceCompatibilityMode>TaxiEnableVersion8_5</interfaceCompatibilityMode>
+  <version85InterfaceMigrationMode>Use</version85InterfaceMigrationMode>
+  <compatibilityMode>8.5.1</compatibilityMode>
+  <languages uuid="74919257-f501-45c2-96cb-a2467f591e20">
+    <name>Русский</name>
+    <synonym>
+      <key>ru</key>
+      <value>Русский</value>
+    </synonym>
+    <languageCode>ru</languageCode>
+  </languages>
+  <subsystems>Subsystem.НСИ</subsystems>
+  <subsystems>Subsystem.Основная</subsystems>
+  <httpServices>HTTPService.НовыеПоказания</httpServices>
+  <commonForms>CommonForm.Форма</commonForms>
+  <catalogs>Catalog.ОбъектыНедвижимости</catalogs>
+  <catalogs>Catalog.ТипыРесурсов</catalogs>
+  <catalogs>Catalog.ПриборыУчета</catalogs>
+  <catalogs>Catalog.Потребители</catalogs>
+  <catalogs>Catalog.ЛицевыеСчета</catalogs>
+  <catalogs>Catalog.РесурсныеКомпании</catalogs>
+  <documents>Document.УчетПоказаний</documents>
+  <enums>Enum.СтатусыПриборовУчета</enums>
+  <enums>Enum.СтатусыОбъектовНедвижимости</enums>
+  <enums>Enum.ТипПотребителя</enums>
+  <enums>Enum.ВидыРасчетов</enums>
+  <reports>Report.СводноПоУслугам</reports>
+  <reports>Report.ПоУслугам</reports>
+  <informationRegisters>InformationRegister.Тарифы</informationRegisters>
+  <informationRegisters>InformationRegister.Показания</informationRegisters>
+  <informationRegisters>InformationRegister.ТарифыИнтервальный</informationRegisters>
+  <accumulationRegisters>AccumulationRegister.ПотреблениеРесурсов</accumulationRegisters>
+  <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.ВидыРесурсов</chartsOfCharacteristicTypes>
+</mdclass:Configuration>

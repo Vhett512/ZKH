@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="683d8c3b-8994-4624-a197-a2cb1d6d7ad5">
+  <producedTypes>
+    <selectionType typeId="cc66da3d-411c-492e-a84c-f12bf83f21af" valueTypeId="19096d30-a35d-46bd-b95e-c567633f52c3"/>
+    <listType typeId="b17fe669-4307-4fd5-8682-d2006b010c7f" valueTypeId="8bc1e501-7126-4cce-96dc-bf33460a8d85"/>
+    <managerType typeId="70b794c7-bb7f-46d0-a4a2-f12d1e35142c" valueTypeId="26e955bb-cbf9-46c0-bddb-25c520b94834"/>
+    <recordSetType typeId="53c099d7-275e-45c1-ae60-99c62bc3b6f1" valueTypeId="d32478c4-3602-49ed-9732-74c5fc57dd96"/>
+    <recordKeyType typeId="b563dc12-1140-4086-bf3b-90c6461b89dc" valueTypeId="330f4790-2aab-47a0-a18b-e4d7825388e6"/>
+    <recordType typeId="a78e65b6-8afb-44bc-b9dc-323fa8aa276a" valueTypeId="6ab5b30d-b56b-493a-843b-614e26c8d53e"/>
+    <recordManagerType typeId="8236520c-4927-4e0d-8ff6-6a2a527402e6" valueTypeId="cdd57977-fa54-4385-ad5a-bcf47d413e95"/>
+  </producedTypes>
+  <name>Тарифы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тарифы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSliceFirst>true</enableTotalsSliceFirst>
+  <enableTotalsSliceLast>true</enableTotalsSliceLast>
+  <resources uuid="128ad14c-fc92-47f1-a972-d083d4403489">
+    <name>Тариф</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тариф</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="17ad4251-0a4f-4f6d-8f64-4fb3dc5e0f36">
+    <name>РесурсУслуга</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ресурс услуга</value>
+    </synonym>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.ВидыРесурсов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

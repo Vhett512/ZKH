@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f820848c-5e59-40a4-971d-b95aec08c88b">
+  <producedTypes>
+    <objectType typeId="faf5dd8f-d122-4d9a-bb1f-a5e5fcd97ff0" valueTypeId="c800a429-2460-4afa-bd3b-b124342909f6"/>
+    <refType typeId="e247aaf2-7b75-4afa-b23a-72e5f0c4948c" valueTypeId="1d54708f-c4e9-4ffa-ac90-b2df8618ff62"/>
+    <selectionType typeId="6e7015ee-2844-465d-8479-388f648fadef" valueTypeId="62c805df-7fd2-4d51-8185-877928ab5037"/>
+    <listType typeId="52769067-35a3-49b3-be6c-f69e1e60fd86" valueTypeId="cf552f35-40da-4d4e-8f4d-e41d9f7ab707"/>
+    <managerType typeId="06883d34-fb8b-4a1f-9ff6-42ae6726c914" valueTypeId="5a26c300-6aff-4539-ae7f-4e017b498dcb"/>
+  </producedTypes>
+  <name>РесурсныеКомпании</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ресурсные компании</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.РесурсныеКомпании.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.РесурсныеКомпании.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

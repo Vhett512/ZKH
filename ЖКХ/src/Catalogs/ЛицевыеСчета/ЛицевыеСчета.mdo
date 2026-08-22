@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a140000c-8a11-4957-a275-32b50d8b62b4">
+  <producedTypes>
+    <objectType typeId="152143c6-516c-4b72-b21b-41500ab39825" valueTypeId="85bc0e87-b823-4597-a7d1-6aeeb5e0ad74"/>
+    <refType typeId="b88702be-dae0-496e-ac8c-73ff98d5ea60" valueTypeId="ae1637ce-f182-458e-995e-2511d3eb61d8"/>
+    <selectionType typeId="26bfc4ad-fcaf-404e-bf4e-691d8f5371ac" valueTypeId="e922277b-6e1e-41e3-a594-6d5fd42fd102"/>
+    <listType typeId="cf59f9c7-45af-4a60-bd1b-5adb4aefb749" valueTypeId="04347a48-5dd6-4d29-aa7b-8b170baa1587"/>
+    <managerType typeId="c1eaa69f-9b2d-4f2a-8f93-b16e0cbe4e32" valueTypeId="5a3ead77-582b-4a30-8726-4b3d425eac71"/>
+  </producedTypes>
+  <name>ЛицевыеСчета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Лицевые счета</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ЛицевыеСчета.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ЛицевыеСчета.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="055b1b50-c2db-441e-b273-6bd4797c3908">
+    <name>НомерСчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер счета</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="81a46519-d28e-4609-8bd3-32d35dd6feed">
+    <name>Потребитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Потребитель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Потребители</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="03766ab4-cc5c-44aa-b921-2f228794842e">
+    <name>ОбъектНедвижимости</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект недвижимости</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ОбъектыНедвижимости</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5f4e6355-9962-40d1-8e50-39719e8acc40">
+    <name>ДатаОткрытия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата открытия</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="39e1f8a3-8fd8-4025-a370-5510f56249c6">
+    <name>ДатаЗакрытия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата закрытия</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d77eddc8-2128-48b1-a31d-f022416203f0">
+    <name>ТекущийБаланс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текущий баланс</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="5fecfacc-11e9-49c3-9dfe-746103a07f77">
+    <producedTypes>
+      <objectType typeId="17cbb336-1dfd-4991-98c9-4d996e782fca" valueTypeId="02834ae7-47d1-4a30-bcae-b9ce3fcfaf6f"/>
+      <rowType typeId="ad8b7de7-1e20-4a57-936c-3d3782dec233" valueTypeId="bfd5e10f-782a-4eca-bac2-5fe52e08a5fe"/>
+    </producedTypes>
+    <name>ПодключенныеРесурсы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подключенные ресурсы</value>
+    </synonym>
+    <attributes uuid="e45e7949-c769-4a8f-a9ca-51dbde0f31d7">
+      <name>ВидРесурса</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид ресурса</value>
+      </synonym>
+      <type>
+        <types>ChartOfCharacteristicTypesRef.ВидыРесурсов</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="16683898-5310-4c24-b0fc-ef455071de46">
+      <name>ПриборУчета</name>
+      <synonym>
+        <key>ru</key>
+        <value>Прибор учета</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ПриборыУчета</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <lineNumberLength>9</lineNumberLength>
+  </tabularSections>
+</mdclass:Catalog>

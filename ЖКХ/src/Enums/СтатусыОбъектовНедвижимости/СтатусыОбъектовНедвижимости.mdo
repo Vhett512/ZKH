@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2ecc3912-2b0d-4f01-9cba-a52d93b675c9">
+  <producedTypes>
+    <refType typeId="8bf1ab06-354c-4095-ac51-42a26ff87de6" valueTypeId="f0f2dbd4-ad10-4f81-be0d-b6adb882ddb1"/>
+    <listType typeId="b148c572-e911-4a1d-99ac-46992cba7cee" valueTypeId="eed7a1f2-d67b-450f-8de6-a76406ceff78"/>
+    <managerType typeId="8af8b4e4-0903-4ee3-b588-379c04c5ccda" valueTypeId="70bcbdff-582e-45b0-8508-3443662ee854"/>
+  </producedTypes>
+  <name>СтатусыОбъектовНедвижимости</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы объектов недвижимости</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="cee4b9d4-6b9a-4005-aa37-f8a2246ac918">
+    <name>Жилой</name>
+    <synonym>
+      <key>ru</key>
+      <value>Жилой</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1ff52e6d-21ca-4f43-88a0-37db42439546">
+    <name>Нежилой</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нежилой</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="2a53766d-40e3-4415-b965-31f97891a26a">
+    <name>Арендованный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Арендованный</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>
