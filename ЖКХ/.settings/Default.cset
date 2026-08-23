@@ -24,6 +24,9 @@
     },
     "bsl-ql-hub": {
       "enabled": true
+    },
+    "reading-attribute-from-database": {
+      "enabled": false
     }
   }
 }
