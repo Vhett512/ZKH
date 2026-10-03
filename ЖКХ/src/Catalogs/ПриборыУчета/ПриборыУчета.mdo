@@ -169,21 +169,6 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="befc717c-e200-43e4-a600-c809a40c787c">
-    <name>МестоУстановки</name>
-    <synonym>
-      <key>ru</key>
-      <value>Место установки</value>
-    </synonym>
-    <type>
-      <types>CatalogRef.ОбъектыНедвижимости</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
   <attributes uuid="ce291e83-7c9b-4949-9ae1-084db21182e4">
     <name>Статус</name>
     <synonym>
