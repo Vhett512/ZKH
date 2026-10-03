@@ -112,6 +112,7 @@
   <owners>Catalog.ОбъектыНедвижимости</owners>
   <codeLength>9</codeLength>
   <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
   <codeAllowedLength>Variable</codeAllowedLength>
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
