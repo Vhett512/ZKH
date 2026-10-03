@@ -44,6 +44,8 @@
   </languages>
   <subsystems>Subsystem.НСИ</subsystems>
   <subsystems>Subsystem.Основная</subsystems>
+  <roles>Role.АдминистраторСистемы</roles>
+  <roles>Role.ПолныеПрава</roles>
   <httpServices>HTTPService.НовыеПоказания</httpServices>
   <commonForms>CommonForm.Форма</commonForms>
   <catalogs>Catalog.ОбъектыНедвижимости</catalogs>
