@@ -68,10 +68,10 @@
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="33d0e3de-40cd-4acb-86f2-122e294ee294">
-    <name>Владелец</name>
+    <name>РесурснаяКомпания</name>
     <synonym>
       <key>ru</key>
-      <value>Обеспечивающий ресурс</value>
+      <value>Ресурсная компания</value>
     </synonym>
     <type>
       <types>CatalogRef.РесурсныеКомпании</types>

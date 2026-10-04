@@ -27,7 +27,7 @@
       <key>ru</key>
       <value>Результат запроса</value>
     </title>
-    <id>1</id>
+    <id>8</id>
     <valueType>
       <types>ValueTable</types>
     </valueType>
@@ -43,7 +43,7 @@
         <key>ru</key>
         <value>Месяц</value>
       </title>
-      <id>1</id>
+      <id>9</id>
       <valueType>
         <types>Date</types>
         <dateQualifiers>
@@ -63,7 +63,7 @@
         <key>ru</key>
         <value>Прибор учета</value>
       </title>
-      <id>2</id>
+      <id>10</id>
       <valueType>
         <types>CatalogRef.ПриборыУчета</types>
       </valueType>
@@ -80,12 +80,12 @@
         <key>ru</key>
         <value>Оборот</value>
       </title>
-      <id>3</id>
+      <id>11</id>
       <valueType>
         <types>Number</types>
         <numberQualifiers>
-          <precision>10</precision>
-          <nonNegative>true</nonNegative>
+          <precision>15</precision>
+          <scale>3</scale>
         </numberQualifiers>
       </valueType>
       <view>
@@ -101,13 +101,12 @@
         <key>ru</key>
         <value>Среднее значение</value>
       </title>
-      <id>4</id>
+      <id>12</id>
       <valueType>
         <types>Number</types>
         <numberQualifiers>
-          <precision>10</precision>
-          <scale>2</scale>
-          <nonNegative>true</nonNegative>
+          <precision>15</precision>
+          <scale>3</scale>
         </numberQualifiers>
       </valueType>
       <view>
@@ -123,13 +122,12 @@
         <key>ru</key>
         <value>Процент</value>
       </title>
-      <id>5</id>
+      <id>13</id>
       <valueType>
         <types>Number</types>
         <numberQualifiers>
-          <precision>10</precision>
-          <scale>2</scale>
-          <nonNegative>true</nonNegative>
+          <precision>15</precision>
+          <scale>3</scale>
         </numberQualifiers>
       </valueType>
       <view>
@@ -145,7 +143,7 @@
         <key>ru</key>
         <value>Код прибора учета</value>
       </title>
-      <id>6</id>
+      <id>14</id>
       <valueType>
         <types>String</types>
         <stringQualifiers>
@@ -165,7 +163,7 @@
         <key>ru</key>
         <value>Тип ресурса</value>
       </title>
-      <id>7</id>
+      <id>15</id>
       <valueType>
         <types>CatalogRef.ТипыРесурсов</types>
       </valueType>
