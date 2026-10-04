@@ -222,15 +222,18 @@
     </items>
     <items xsi:type="form:FormField">
       <name>ПоказанияУслуга</name>
-      <id>26</id>
+      <id>35</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
       </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.Показания.Услуга</segments>
+      </dataPath>
       <extendedTooltip>
-        <name>ПоказанияУслугаРасширеннаяПодсказка</name>
-        <id>28</id>
+        <name>ПоказанияПоказанияУслугаРасширеннаяПодсказка</name>
+        <id>37</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -239,8 +242,8 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ПоказанияУслугаКонтекстноеМеню</name>
-        <id>27</id>
+        <name>ПоказанияПоказанияУслугаКонтекстноеМеню</name>
+        <id>36</id>
         <autoFill>true</autoFill>
       </contextMenu>
       <type>InputField</type>
@@ -252,7 +255,6 @@
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
         <wrap>true</wrap>
-        <extendedEditMultipleValues>true</extendedEditMultipleValues>
         <chooseType>true</chooseType>
         <typeDomainEnabled>true</typeDomainEnabled>
         <textEdit>true</textEdit>
@@ -424,6 +426,10 @@
     <horizontalAlign>Left</horizontalAlign>
     <autoFill>true</autoFill>
   </autoCommandBar>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>ПриСозданииНаСервере</name>
+  </handlers>
   <windowOpeningMode>DontBlock</windowOpeningMode>
   <saveWindowSettings>true</saveWindowSettings>
   <autoTitle>true</autoTitle>
