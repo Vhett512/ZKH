@@ -4,13 +4,13 @@
     <objectType typeId="c4a3f794-2626-4409-acf9-7275a8c2dd58" valueTypeId="68f2140c-ae7d-4758-8c6d-cf294768d779"/>
     <managerType typeId="8fcacb6e-8fda-4915-95aa-9c1b78087087" valueTypeId="e41d76fd-cb04-4327-8708-4e8cb4dd6ed2"/>
   </producedTypes>
-  <name>СводноПоУслугам</name>
+  <name>ПоказанияЗаПериод</name>
   <synonym>
     <key>ru</key>
-    <value>Сводно по услугам</value>
+    <value>Показания за период</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
-  <mainDataCompositionSchema>Report.СводноПоУслугам.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <mainDataCompositionSchema>Report.ПоказанияЗаПериод.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
   <templates uuid="c657c5e6-0726-46c0-ada7-0012bd1df210">
     <name>ОсновнаяСхемаКомпоновкиДанных</name>
     <synonym>

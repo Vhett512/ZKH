@@ -33,7 +33,7 @@
   <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
   <modalityUseMode>DontUse</modalityUseMode>
   <synchronousPlatformExtensionAndAddInCallUseMode>DontUse</synchronousPlatformExtensionAndAddInCallUseMode>
-  <interfaceCompatibilityMode>Version8_5</interfaceCompatibilityMode>
+  <interfaceCompatibilityMode>TaxiEnableVersion8_5</interfaceCompatibilityMode>
   <version85InterfaceMigrationMode>Use</version85InterfaceMigrationMode>
   <compatibilityMode>8.5.1</compatibilityMode>
   <languages uuid="74919257-f501-45c2-96cb-a2467f591e20">
@@ -61,8 +61,8 @@
   <enums>Enum.СтатусыОбъектовНедвижимости</enums>
   <enums>Enum.ТипПотребителя</enums>
   <enums>Enum.ВидыРасчетов</enums>
-  <reports>Report.СводноПоУслугам</reports>
-  <reports>Report.ПоУслугам</reports>
+  <reports>Report.ПоказанияЗаПериод</reports>
+  <reports>Report.СреднемесячныеЗначения</reports>
   <informationRegisters>InformationRegister.Тарифы</informationRegisters>
   <informationRegisters>InformationRegister.Показания</informationRegisters>
   <informationRegisters>InformationRegister.ТарифыИнтервальный</informationRegisters>

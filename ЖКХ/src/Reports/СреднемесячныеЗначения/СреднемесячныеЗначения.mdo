@@ -4,13 +4,13 @@
     <objectType typeId="12b86355-6b58-4fbf-9317-b678e7d33436" valueTypeId="c7f4ff68-b140-4f80-994f-477131495c1c"/>
     <managerType typeId="549cad73-5e6c-4846-bd7a-50317a0d976e" valueTypeId="62d4f05d-212d-4359-864a-961d9e8cc4bf"/>
   </producedTypes>
-  <name>ПоУслугам</name>
+  <name>СреднемесячныеЗначения</name>
   <synonym>
     <key>ru</key>
-    <value>По услугам</value>
+    <value>Среднемесячные значения</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
-  <mainDataCompositionSchema>Report.ПоУслугам.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <mainDataCompositionSchema>Report.СреднемесячныеЗначения.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
   <help>
     <pages>
       <lang>ru</lang>

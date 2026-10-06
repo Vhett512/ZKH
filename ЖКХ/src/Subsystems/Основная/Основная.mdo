@@ -10,8 +10,8 @@
   <content>InformationRegister.Тарифы</content>
   <content>Document.УчетПоказаний</content>
   <content>InformationRegister.Показания</content>
-  <content>Report.СводноПоУслугам</content>
+  <content>Report.ПоказанияЗаПериод</content>
   <content>AccumulationRegister.ПотреблениеРесурсов</content>
-  <content>Report.ПоУслугам</content>
+  <content>Report.СреднемесячныеЗначения</content>
   <content>CommonForm.Форма</content>
 </mdclass:Subsystem>

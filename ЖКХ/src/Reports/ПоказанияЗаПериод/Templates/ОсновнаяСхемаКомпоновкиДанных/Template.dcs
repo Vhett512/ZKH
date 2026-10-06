@@ -7,18 +7,6 @@
 	<dataSet xsi:type="DataSetQuery">
 		<name>НаборДанных1</name>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>Период</dataPath>
-			<field>Период</field>
-			<role>
-				<dcscom:periodNumber>1</dcscom:periodNumber>
-				<dcscom:periodType>Main</dcscom:periodType>
-			</role>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ПриборУчета</dataPath>
-			<field>ПриборУчета</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
 			<dataPath>Недвижимость</dataPath>
 			<field>Недвижимость</field>
 			<title xsi:type="v8:LocalStringType">
@@ -37,6 +25,9 @@
 					<v8:content>Вид ресурса</v8:content>
 				</v8:item>
 			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Оборот</dataPath>
@@ -47,10 +38,22 @@
 					<v8:content>Оборот</v8:content>
 				</v8:item>
 			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Период</dataPath>
+			<field>Период</field>
 			<role>
-				<dcscom:dimension>true</dcscom:dimension>
-				<dcscom:parentDimension>ВидРесурса</dcscom:parentDimension>
+				<dcscom:periodNumber>1</dcscom:periodNumber>
+				<dcscom:periodType>Main</dcscom:periodType>
 			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПриборУчета</dataPath>
+			<field>ПриборУчета</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ресурс</dataPath>
+			<field>Ресурс</field>
 		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
@@ -59,12 +62,12 @@
 	ПотреблениеРесурсовОбороты.ПотреблениеРесурсаОборот КАК Оборот,
 	ПотреблениеРесурсовОбороты.Период КАК Период
 ИЗ
-	РегистрНакопления.ПотреблениеРесурсов.Обороты(НАЧАЛОПЕРИОДА(&amp;Год, ГОД) {&amp;Год}, КОНЕЦПЕРИОДА(&amp;Год, ГОД) {&amp;ГодК}, Месяц, ) КАК ПотреблениеРесурсовОбороты</query>
+	РегистрНакопления.ПотреблениеРесурсов.Обороты(НАЧАЛОПЕРИОДА(&amp;Год, ГОД), КОНЕЦПЕРИОДА(&amp;Год, ГОД), Месяц,) КАК
+		ПотреблениеРесурсовОбороты</query>
 	</dataSet>
 	<totalField>
 		<dataPath>Оборот</dataPath>
-		<expression>Среднее(Оборот)</expression>
-		<group>ВидРесурса</group>
+		<expression>Сумма(Оборот)</expression>
 	</totalField>
 	<parameter>
 		<name>Год</name>
@@ -96,11 +99,11 @@
 		<denyIncompleteValues>true</denyIncompleteValues>
 	</parameter>
 	<parameter>
-		<name>ГодК</name>
+		<name>НачалоПериода</name>
 		<title xsi:type="v8:LocalStringType">
 			<v8:item>
 				<v8:lang>ru</v8:lang>
-				<v8:content>Год К</v8:content>
+				<v8:content>Начало периода</v8:content>
 			</v8:item>
 		</title>
 		<valueType>
@@ -109,9 +112,23 @@
 				<v8:DateFractions>DateTime</v8:DateFractions>
 			</v8:DateQualifiers>
 		</valueType>
-		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
 		<useRestriction>false</useRestriction>
-		<expression>КонецПериода(&amp;Год, "ГОД")</expression>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<useRestriction>false</useRestriction>
 	</parameter>
 	<settingsVariant>
 		<dcsset:name>Диаграмма</dcsset:name>
@@ -289,118 +306,6 @@
 					<dcsset:selection>
 						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
 					</dcsset:selection>
-				</dcsset:item>
-			</dcsset:item>
-			<dcsset:item xsi:type="dcsset:StructureItemGroup">
-				<dcsset:groupItems>
-					<dcsset:item xsi:type="dcsset:GroupItemField">
-						<dcsset:field>Недвижимость</dcsset:field>
-						<dcsset:groupType>Items</dcsset:groupType>
-						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
-						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
-						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
-					</dcsset:item>
-				</dcsset:groupItems>
-				<dcsset:order>
-					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
-				</dcsset:order>
-				<dcsset:selection>
-					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
-				</dcsset:selection>
-				<dcsset:item xsi:type="dcsset:StructureItemGroup">
-					<dcsset:groupItems>
-						<dcsset:item xsi:type="dcsset:GroupItemField">
-							<dcsset:field>ВидРесурса</dcsset:field>
-							<dcsset:groupType>Items</dcsset:groupType>
-							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
-							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
-							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
-						</dcsset:item>
-					</dcsset:groupItems>
-					<dcsset:order>
-						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
-					</dcsset:order>
-					<dcsset:selection>
-						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
-					</dcsset:selection>
-				</dcsset:item>
-			</dcsset:item>
-		</dcsset:settings>
-	</settingsVariant>
-	<settingsVariant>
-		<dcsset:name>РазницаПоГодам</dcsset:name>
-		<dcsset:presentation xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Разница по годам</v8:content>
-			</v8:item>
-		</dcsset:presentation>
-		<dcsset:settings xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
-			<dcsset:selection>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>ВидРесурса</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>Недвижимость</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>Оборот</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>Период</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
-			</dcsset:selection>
-			<dcsset:dataParameters>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>Год</dcscor:parameter>
-					<dcscor:value xsi:type="v8:StandardBeginningDate">
-						<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisYear</v8:variant>
-					</dcscor:value>
-					<dcsset:userSettingID>d84a46b8-bcde-429a-a994-09d5a68fb659</dcsset:userSettingID>
-				</dcscor:item>
-			</dcsset:dataParameters>
-			<dcsset:item xsi:type="dcsset:StructureItemGroup">
-				<dcsset:groupItems>
-					<dcsset:item xsi:type="dcsset:GroupItemField">
-						<dcsset:field>Недвижимость</dcsset:field>
-						<dcsset:groupType>Items</dcsset:groupType>
-						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
-						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
-						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
-					</dcsset:item>
-				</dcsset:groupItems>
-				<dcsset:order>
-					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
-				</dcsset:order>
-				<dcsset:selection>
-					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
-				</dcsset:selection>
-				<dcsset:item xsi:type="dcsset:StructureItemGroup">
-					<dcsset:groupItems>
-						<dcsset:item xsi:type="dcsset:GroupItemField">
-							<dcsset:field>ВидРесурса</dcsset:field>
-							<dcsset:groupType>Items</dcsset:groupType>
-							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
-							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
-							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
-						</dcsset:item>
-					</dcsset:groupItems>
-					<dcsset:order>
-						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
-					</dcsset:order>
-					<dcsset:selection>
-						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
-					</dcsset:selection>
-					<dcsset:item xsi:type="dcsset:StructureItemGroup">
-						<dcsset:use>false</dcsset:use>
-						<dcsset:order>
-							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
-						</dcsset:order>
-						<dcsset:selection>
-							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
-						</dcsset:selection>
-					</dcsset:item>
 				</dcsset:item>
 			</dcsset:item>
 		</dcsset:settings>

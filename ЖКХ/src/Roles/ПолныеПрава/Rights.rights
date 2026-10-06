@@ -967,7 +967,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Report.ПоУслугам</name>
+		<name>Report.СреднемесячныеЗначения</name>
 		<right>
 			<name>Use</name>
 			<value>true</value>
@@ -978,7 +978,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Report.СводноПоУслугам</name>
+		<name>Report.ПоказанияЗаПериод</name>
 		<right>
 			<name>Use</name>
 			<value>true</value>
