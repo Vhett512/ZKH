@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="36b56cbe-5d5d-4eb1-a8b7-d7e60f3d74a1">
+  <producedTypes>
+    <objectType typeId="3e3bddc7-8cd6-4dec-b21a-d6e6781eefee" valueTypeId="5d66e168-ba87-4b43-9370-77dd2ea1e270"/>
+    <managerType typeId="8e2b1914-c438-48f0-99f7-09a71c9484d9" valueTypeId="d0cfc95a-3175-49d2-934e-7871f4dea445"/>
+  </producedTypes>
+  <name>ЗагрузкаВыставленныхСчетов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка выставленных счетов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЗагрузкаВыставленныхСчетов.Form.Форма</defaultForm>
+  <attributes uuid="11047e61-9e23-4e31-a878-d0756c47f08c">
+    <name>ЛицевойСчет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Лицевой счет</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЛицевыеСчета</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c2e14cbe-b6c7-4eb5-9d2f-0c0866e97dec">
+    <name>ИмяФайла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Файл</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>500</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="716a1ac2-b49e-4745-883d-0adb3fded186">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загрузка выставленных счетов</value>
+    </synonym>
+  </forms>
+</mdclass:DataProcessor>

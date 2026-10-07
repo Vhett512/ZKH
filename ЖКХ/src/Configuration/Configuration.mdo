@@ -56,6 +56,7 @@
   <catalogs>Catalog.Потребители</catalogs>
   <catalogs>Catalog.ЛицевыеСчета</catalogs>
   <catalogs>Catalog.РесурсныеКомпании</catalogs>
+  <documents>Document.ВыставленныеСчета</documents>
   <documents>Document.УчетПоказаний</documents>
   <enums>Enum.СтатусыПриборовУчета</enums>
   <enums>Enum.СтатусыОбъектовНедвижимости</enums>
@@ -63,6 +64,7 @@
   <enums>Enum.ВидыРасчетов</enums>
   <reports>Report.ПоказанияЗаПериод</reports>
   <reports>Report.СреднемесячныеЗначения</reports>
+  <dataProcessors>DataProcessor.ЗагрузкаВыставленныхСчетов</dataProcessors>
   <informationRegisters>InformationRegister.Тарифы</informationRegisters>
   <informationRegisters>InformationRegister.Показания</informationRegisters>
   <informationRegisters>InformationRegister.ТарифыИнтервальный</informationRegisters>

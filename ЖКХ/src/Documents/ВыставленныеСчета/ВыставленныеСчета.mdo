@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="61217c0f-c8dc-4b18-b43d-2690d47f5101">
+  <producedTypes>
+    <objectType typeId="86c0c8f6-9087-4100-bbbc-3f0e67ce6a04" valueTypeId="0467f4e1-25d6-46c0-9856-9a81e61a38ad"/>
+    <refType typeId="1f18d4ee-ff78-4d8b-bd13-37f905240d49" valueTypeId="0142f5a0-66fa-4230-b7e0-17a52f7e9ac5"/>
+    <selectionType typeId="16d5d32f-c0d5-4724-a90f-b436b48f853d" valueTypeId="65f384da-e709-4bf7-96a0-ca4ab93b5160"/>
+    <listType typeId="a5a6039b-69e8-45ed-b68e-64c2cb83e40c" valueTypeId="4b1a2a9e-0df1-44f6-bf03-7dd8db8fddc2"/>
+    <managerType typeId="7989e4c1-3cf1-44b2-80af-a8cb489645f3" valueTypeId="7ad4b164-8166-4be0-8937-1f5f341caeb5"/>
+  </producedTypes>
+  <name>ВыставленныеСчета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выставленные счета</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Выставленный счет</value>
+  </objectPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <numberPeriodicity>Month</numberPeriodicity>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ВыставленныеСчета.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>AccumulationRegister.ПотреблениеРесурсов</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="906d6bf7-ce6a-4297-8f09-14702acb970e">
+    <name>ЛицевойСчет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Лицевой счет</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЛицевыеСчета</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="26309617-5d7f-4eee-9a65-533d2479cd3c">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="bb0062e2-341b-4714-9ce2-275f8c14eb05">
+    <name>Недвижимость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Недвижимость</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ОбъектыНедвижимости</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="ba7d4136-830d-40be-add7-1bf9fe17f3df">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="632ca6e8-04c4-4091-9b71-e8761be9efb6">
+    <producedTypes>
+      <objectType typeId="382633f6-4fb0-4f4a-a6f3-aadaa10b58ee" valueTypeId="73877a6b-59aa-451a-8a65-efdfe9884950"/>
+      <rowType typeId="16aab5c1-a71d-4a07-985c-580754d4dedb" valueTypeId="845ba183-5087-4975-8c99-a0b9cedd212e"/>
+    </producedTypes>
+    <name>Услуги</name>
+    <synonym>
+      <key>ru</key>
+      <value>Услуги</value>
+    </synonym>
+    <attributes uuid="189d77fc-20e5-4b15-938e-d0c50f349031">
+      <name>Услуга</name>
+      <synonym>
+        <key>ru</key>
+        <value>Услуга</value>
+      </synonym>
+      <type>
+        <types>ChartOfCharacteristicTypesRef.ВидыРесурсов</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="1f76d8a5-4a31-4370-8bc2-4c8d9e608fe8">
+      <name>Объем</name>
+      <synonym>
+        <key>ru</key>
+        <value>Объем</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="1b92417e-acea-4bde-9fc2-c060d0f08d0e">
+      <name>Тариф</name>
+      <synonym>
+        <key>ru</key>
+        <value>Тариф</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="1244bb21-2712-4626-8fe5-7ce56d14c4b1">
+      <name>Начислено</name>
+      <synonym>
+        <key>ru</key>
+        <value>Начислено за период</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="eb0d2e4f-fdc6-44b4-95c0-a88f86878c0d">
+      <name>Пени</name>
+      <synonym>
+        <key>ru</key>
+        <value>Всего пени</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="04fe8780-5334-45d0-a720-c1c34542b030">
+      <name>Перерасчеты</name>
+      <synonym>
+        <key>ru</key>
+        <value>Перерасчеты</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="f53afeb5-b8c2-494e-ab67-0788ef140acc">
+      <name>Задолженность</name>
+      <synonym>
+        <key>ru</key>
+        <value>Задолженность</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="189c090b-b0df-41c1-a280-875cf25ff89f">
+      <name>Льготы</name>
+      <synonym>
+        <key>ru</key>
+        <value>Льготы</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="1bb3b887-d841-40df-be91-6d4a838a98d7">
+      <name>Оплачено</name>
+      <synonym>
+        <key>ru</key>
+        <value>Оплачено</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

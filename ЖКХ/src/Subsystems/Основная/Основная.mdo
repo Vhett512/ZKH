@@ -14,4 +14,6 @@
   <content>AccumulationRegister.ПотреблениеРесурсов</content>
   <content>Report.СреднемесячныеЗначения</content>
   <content>CommonForm.Форма</content>
+  <content>Document.ВыставленныеСчета</content>
+  <content>DataProcessor.ЗагрузкаВыставленныхСчетов</content>
 </mdclass:Subsystem>
