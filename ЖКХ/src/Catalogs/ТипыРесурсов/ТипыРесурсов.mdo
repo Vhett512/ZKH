@@ -10,7 +10,7 @@
   <name>ТипыРесурсов</name>
   <synonym>
     <key>ru</key>
-    <value>Ресурсы</value>
+    <value>Типы ресурсов</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <inputByString>Catalog.ТипыРесурсов.StandardAttribute.Description</inputByString>
@@ -21,7 +21,7 @@
   <fullTextSearch>Use</fullTextSearch>
   <objectPresentation>
     <key>ru</key>
-    <value>Ресурс</value>
+    <value>Тип ресурса</value>
   </objectPresentation>
   <levelCount>2</levelCount>
   <foldersOnTop>true</foldersOnTop>

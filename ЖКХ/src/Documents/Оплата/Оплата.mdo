@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d21e72ec-6c91-4614-b1fe-7dc533915b67">
+  <producedTypes>
+    <objectType typeId="e02c6639-11eb-4d6b-9d85-528bb0e0f282" valueTypeId="9acc6f23-67f5-4c16-b704-6a82f91a1cbf"/>
+    <refType typeId="a5a9ada9-115d-43a5-ae41-0f3dbe75c4fe" valueTypeId="3fd598dd-36ba-41df-8a43-cc9ff7923711"/>
+    <selectionType typeId="e86117fe-adc1-43f5-8dea-6f7df775c53d" valueTypeId="81ba19b0-7e06-4bbc-83a1-4b32b06d5261"/>
+    <listType typeId="bae5b92f-91cc-4f20-81a1-a8b37a203b42" valueTypeId="ed549e81-0500-4258-8edd-e6782188ddf2"/>
+    <managerType typeId="c874bd14-e242-48c9-b73e-9c9f57148c62" valueTypeId="40a38927-db5a-46f6-a6cb-72cd25a49a8a"/>
+  </producedTypes>
+  <name>Оплата</name>
+  <synonym>
+    <key>ru</key>
+    <value>Оплата</value>
+  </synonym>
+  <comment>Оплата по лицевому счету</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <basedOn>Document.ВыставленныеСчета</basedOn>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Оплата</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Оплаты</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.Оплата.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>AccumulationRegister.Оплаты</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="87fcb3d7-0548-445c-bd2c-08a8c9e07e63">
+    <name>ЛицевойСчет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Лицевой счет</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЛицевыеСчета</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a66ad841-0026-42fa-9087-fb33ff59d467">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d28bb1d5-51d9-40ea-b68d-006e4c69bd0a">
+    <name>Основание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основание</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ВыставленныеСчета</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d3483471-3365-4f98-b685-338c640f5f73">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="3fc562f6-7475-467a-8b3f-e2adef4af589">
+    <name>ФормаДокумента</name>
+  </forms>
+</mdclass:Document>

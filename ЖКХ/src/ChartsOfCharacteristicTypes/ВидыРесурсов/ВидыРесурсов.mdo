@@ -23,7 +23,7 @@
   <fullTextSearch>Use</fullTextSearch>
   <objectPresentation>
     <key>ru</key>
-    <value>Ресурс</value>
+    <value>Вид ресурса</value>
   </objectPresentation>
   <type>
     <types>CatalogRef.ТипыРесурсов</types>

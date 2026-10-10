@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c84e85a9-3814-42ff-979c-01dad7782eb1">
+  <producedTypes>
+    <selectionType typeId="e25c6f75-784b-4940-b334-87925d321885" valueTypeId="a72cc178-49d8-4467-b224-3ada2298ae8f"/>
+    <listType typeId="c6b032c8-ba26-4259-ac5a-7be58622b22f" valueTypeId="65a84685-9b2e-4374-a1fa-f11ee30447b7"/>
+    <managerType typeId="aeddc91b-6ceb-43fa-b6e1-de6a161c6db8" valueTypeId="af451694-1a09-4c6d-8e64-c0bba4025831"/>
+    <recordSetType typeId="19c6b014-af3c-43b1-a07f-94d0da6f65e0" valueTypeId="6b013c4d-0b60-4aa0-953e-5b24ccae0c6a"/>
+    <recordKeyType typeId="bd8d8674-ec7c-4272-8aa9-97c7ecc5ebe9" valueTypeId="893ba922-9e73-472f-af9a-76fe04defd27"/>
+    <recordType typeId="ebaa54be-5f0a-4dae-97e8-259a82a2424e" valueTypeId="310d3771-355a-4337-87d2-a9153d31c99a"/>
+  </producedTypes>
+  <name>Начисления</name>
+  <synonym>
+    <key>ru</key>
+    <value>Начисления</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="a5b72a1e-cb01-45a3-af92-2c3a86977b46">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="16a5ea22-f00e-4f91-91f4-b31cc0d1a22e">
+    <name>ЛицевойСчет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Лицевой счет</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЛицевыеСчета</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="dee3885b-7f78-4cc0-8653-124d6dff6a07">
+    <name>Услуга</name>
+    <synonym>
+      <key>ru</key>
+      <value>Услуга</value>
+    </synonym>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.ВидыРесурсов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

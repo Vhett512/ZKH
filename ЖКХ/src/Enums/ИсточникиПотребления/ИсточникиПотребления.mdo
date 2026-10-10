@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="aa9132a9-7452-4702-a6dd-b8e741174912">
+  <producedTypes>
+    <refType typeId="bd8275d0-ccd7-43f1-b212-08a23dcc53e2" valueTypeId="69c75027-0177-4490-909d-d7a1f1346a81"/>
+    <listType typeId="b0b739df-dd2b-4f5e-a7b6-43eebfdcbdd4" valueTypeId="147cbf7b-21fb-4b1a-9c36-ae490aefcd2f"/>
+    <managerType typeId="0e37bddf-9c0c-4edb-a201-3eb1a9002613" valueTypeId="8e6a74ed-135c-4e49-adc4-da10fec91672"/>
+  </producedTypes>
+  <name>ИсточникиПотребления</name>
+  <synonym>
+    <key>ru</key>
+    <value>Источники потребления</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="13af1932-735d-4537-9f22-b89f312181ab">
+    <name>ПоказанияПриборов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показания приборов учета</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e7b19895-8126-4c0a-8dea-bed284ef6515">
+    <name>ВыставленныеСчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выставленные счета</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

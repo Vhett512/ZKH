@@ -16,4 +16,24 @@
   <content>CommonForm.Форма</content>
   <content>Document.ВыставленныеСчета</content>
   <content>DataProcessor.ЗагрузкаВыставленныхСчетов</content>
+  <content>AccumulationRegister.Оплаты</content>
+  <content>AccumulationRegister.Начисления</content>
+  <content>CommonModule.ЗагрузкаДанныхЖКХ</content>
+  <content>CommonModule.ОбщегоНазначенияЖКХКлиентСервер</content>
+  <content>CommonModule.ПотреблениеЖКХ</content>
+  <content>CommonModule.ТарифыЖКХ</content>
+  <content>Catalog.РесурсныеКомпании</content>
+  <content>Catalog.ЛицевыеСчета</content>
+  <content>Catalog.Потребители</content>
+  <content>Catalog.ПриборыУчета</content>
+  <content>Catalog.ТипыРесурсов</content>
+  <content>Catalog.ОбъектыНедвижимости</content>
+  <content>Document.Оплата</content>
+  <content>Enum.ВидыРасчетов</content>
+  <content>Enum.ИсточникиПотребления</content>
+  <content>Enum.СтатусыОбъектовНедвижимости</content>
+  <content>Enum.СтатусыПриборовУчета</content>
+  <content>Enum.ТипПотребителя</content>
+  <content>ChartOfCharacteristicTypes.ВидыРесурсов</content>
+  <content>InformationRegister.ТарифыИнтервальный</content>
 </mdclass:Subsystem>

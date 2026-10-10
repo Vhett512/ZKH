@@ -48,6 +48,10 @@
   <subsystems>Subsystem.Основная</subsystems>
   <roles>Role.АдминистраторСистемы</roles>
   <roles>Role.ПолныеПрава</roles>
+  <commonModules>CommonModule.ЗагрузкаДанныхЖКХ</commonModules>
+  <commonModules>CommonModule.ОбщегоНазначенияЖКХКлиентСервер</commonModules>
+  <commonModules>CommonModule.ПотреблениеЖКХ</commonModules>
+  <commonModules>CommonModule.ТарифыЖКХ</commonModules>
   <httpServices>HTTPService.НовыеПоказания</httpServices>
   <commonForms>CommonForm.Форма</commonForms>
   <catalogs>Catalog.ОбъектыНедвижимости</catalogs>
@@ -57,17 +61,21 @@
   <catalogs>Catalog.ЛицевыеСчета</catalogs>
   <catalogs>Catalog.РесурсныеКомпании</catalogs>
   <documents>Document.ВыставленныеСчета</documents>
+  <documents>Document.Оплата</documents>
   <documents>Document.УчетПоказаний</documents>
-  <enums>Enum.СтатусыПриборовУчета</enums>
-  <enums>Enum.СтатусыОбъектовНедвижимости</enums>
-  <enums>Enum.ТипПотребителя</enums>
   <enums>Enum.ВидыРасчетов</enums>
+  <enums>Enum.ИсточникиПотребления</enums>
+  <enums>Enum.СтатусыОбъектовНедвижимости</enums>
+  <enums>Enum.СтатусыПриборовУчета</enums>
+  <enums>Enum.ТипПотребителя</enums>
   <reports>Report.ПоказанияЗаПериод</reports>
   <reports>Report.СреднемесячныеЗначения</reports>
   <dataProcessors>DataProcessor.ЗагрузкаВыставленныхСчетов</dataProcessors>
   <informationRegisters>InformationRegister.Тарифы</informationRegisters>
   <informationRegisters>InformationRegister.Показания</informationRegisters>
   <informationRegisters>InformationRegister.ТарифыИнтервальный</informationRegisters>
+  <accumulationRegisters>AccumulationRegister.Начисления</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.Оплаты</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ПотреблениеРесурсов</accumulationRegisters>
   <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.ВидыРесурсов</chartsOfCharacteristicTypes>
 </mdclass:Configuration>

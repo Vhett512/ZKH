@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b306aecd-10b5-4a6c-81a5-e18bfe183cd2">
+  <name>ОбщегоНазначенияЖКХКлиентСервер</name>
+  <synonym>
+    <key>ru</key>
+    <value>ОбщегоНазначения ЖКХ</value>
+  </synonym>
+  <comment>Общие процедуры и функции конфигурации ЖКХ</comment>
+  <clientManagedApplication>true</clientManagedApplication>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

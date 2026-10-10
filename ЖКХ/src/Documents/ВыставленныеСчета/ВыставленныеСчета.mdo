@@ -12,6 +12,7 @@
     <key>ru</key>
     <value>Выставленные счета</value>
   </synonym>
+  <comment>Счета за коммунальные услуги</comment>
   <useStandardCommands>true</useStandardCommands>
   <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
   <createOnInput>Use</createOnInput>
@@ -29,6 +30,8 @@
   <autonumbering>true</autonumbering>
   <defaultObjectForm>Document.ВыставленныеСчета.Form.ФормаДокумента</defaultObjectForm>
   <registerRecords>AccumulationRegister.ПотреблениеРесурсов</registerRecords>
+  <registerRecords>InformationRegister.Тарифы</registerRecords>
+  <registerRecords>AccumulationRegister.Начисления</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="906d6bf7-ce6a-4297-8f09-14702acb970e">
@@ -71,6 +74,21 @@
     </synonym>
     <type>
       <types>CatalogRef.ОбъектыНедвижимости</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="66429a1c-1cc0-4d8c-a227-b34f68d01816">
+    <name>Оплачено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оплачено</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
