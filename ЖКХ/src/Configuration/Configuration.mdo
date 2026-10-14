@@ -47,7 +47,14 @@
   <subsystems>Subsystem.НСИ</subsystems>
   <subsystems>Subsystem.Основная</subsystems>
   <roles>Role.АдминистраторСистемы</roles>
+  <roles>Role.БазовыеПрава</roles>
+  <roles>Role.ВедениеНСИ</roles>
+  <roles>Role.Начисления</roles>
+  <roles>Role.ОбменДанными</roles>
+  <roles>Role.Оплаты</roles>
   <roles>Role.ПолныеПрава</roles>
+  <roles>Role.ПросмотрОтчетов</roles>
+  <roles>Role.УчетПоказаний</roles>
   <commonModules>CommonModule.ЗагрузкаДанныхЖКХ</commonModules>
   <commonModules>CommonModule.ОбщегоНазначенияЖКХКлиентСервер</commonModules>
   <commonModules>CommonModule.ПотреблениеЖКХ</commonModules>
